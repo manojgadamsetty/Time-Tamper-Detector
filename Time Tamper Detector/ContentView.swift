@@ -8,14 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var viewModel = TimeTamperViewModel()
+    @State private var selectedTab = 0
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TabView(selection: $selectedTab) {
+            TimeTamperMainView(viewModel: viewModel)
+                .tabItem {
+                    Image(systemName: "shield.checkered")
+                    Text("Scanner")
+                }
+                .tag(0)
+            
+            ScanHistoryView(viewModel: viewModel)
+                .tabItem {
+                    Image(systemName: "clock.arrow.trianglehead.counterclockwise.rotate.90")
+                    Text("History")
+                }
+                .tag(1)
+            
+            SystemInfoView(viewModel: viewModel)
+                .tabItem {
+                    Image(systemName: "info.circle")
+                    Text("System")
+                }
+                .tag(2)
         }
-        .padding()
+        .accentColor(.blue)
+        .preferredColorScheme(.light)
     }
 }
 

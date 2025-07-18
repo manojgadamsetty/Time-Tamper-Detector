@@ -12,6 +12,7 @@ struct Time_Tamper_DetectorApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.light)
         }
     }
 }
