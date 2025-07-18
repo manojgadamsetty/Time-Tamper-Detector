@@ -2,6 +2,18 @@
 
 A robust iOS application designed to detect time tampering on devices using system boot time analysis, trusted server time synchronization, and stored reference comparison.
 
+## 🎥 Demo Video
+
+> **Video File**: `Simulator Screen Recording - iPhone 16 - 2025-07-18 at 20.15.05.mp4`
+
+### 📱 **What the Demo Shows:**
+- Real-time time tamper detection in action
+- Material Design UI with smooth animations  
+- Three-tab navigation (Scanner, History, System Info)
+- Network synchronization and offline detection
+- Detailed scan results and confidence scoring
+- Export functionality and system information
+
 ## Features
 
 ### 🔒 **Time Tamper Detection**
@@ -147,6 +159,18 @@ struct TimeTamperConfig {
 - **StatusIndicator**: Color-coded status indicators
 - **AnimatedCheckmark/XMark**: Smooth result animations
 - **InfoRow**: Consistent information display format
+
+## 📸 Screenshots
+
+| Scanner Interface | Detection Results | Scan History |
+|:---:|:---:|:---:|
+| ![Scanner](https://via.placeholder.com/300x600/007ACC/FFFFFF?text=Scanner+Tab) | ![Results](https://via.placeholder.com/300x600/28A745/FFFFFF?text=Detection+Results) | ![History](https://via.placeholder.com/300x600/6F42C1/FFFFFF?text=Scan+History) |
+
+| System Information | Material Design | Settings |
+|:---:|:---:|:---:|
+| ![System](https://via.placeholder.com/300x600/FD7E14/FFFFFF?text=System+Info) | ![Design](https://via.placeholder.com/300x600/E83E8C/FFFFFF?text=Material+Design) | ![Settings](https://via.placeholder.com/300x600/20C997/FFFFFF?text=Settings) |
+
+> **Replace placeholders**: Add actual screenshots by uploading images to GitHub and updating the URLs above.
 
 ## Testing
 
